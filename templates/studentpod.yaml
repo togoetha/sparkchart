@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: todo-debug-deployment
+  namespace: default
+  labels:
+    app: todo-debug
+spec:
+  containers:
+  - name: todowebservice
+    image: togoetha/todoservice
